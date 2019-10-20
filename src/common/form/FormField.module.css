@@ -1,18 +1,60 @@
 .TextField {
+  display: block;
+  width: 100%;
+}
+.TextField_label {
+  display: block;
+  min-height: 20px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, .6);
+}
+.TextField_input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+  box-sizing: border-box;
+}
+.TextField_input::placeholder,
+.TextArea {
+  color: rgba(0, 0, 0, .4);
+}
+.TextField_caption {
 
 }
-.TextField--grouped {
+.TextField_caption___error {
 
 }
-.TextField__label {
-
+.TextField___grouped > .TextField_input{
+  border-radius: 0;
 }
-.TextField__input {
-
+.TextField___grouped:first-child > .TextField_input{
+  border-radius: 5px 0 0 5px;
 }
-.TextField__caption {
-
+.TextField___grouped:last-child > .TextField_input{
+  border-left: none;
+  border-radius: 0 5px 5px 0;
 }
-.TextField__caption--error {
-
+.Group {
+  display: flex;
+  width: 100%;
+}
+.TextArea_input {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000;
+  box-sizing: border-box;
 }

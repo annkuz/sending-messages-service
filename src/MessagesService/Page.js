@@ -7,7 +7,7 @@ function MessagesServicePage() {
     <div className="MessagesServicePage">
       <div className={styles.Wrapper}>
         <header>
-          Header
+          PageHeader -logo place
         </header>
         <MessageForm />
       </div>
