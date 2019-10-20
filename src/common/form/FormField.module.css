@@ -12,15 +12,22 @@
 }
 .TextField_input {
   display: block;
+  position: relative;
   width: 100%;
   height: 40px;
   padding: 5px 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  outline: none;
   font-size: 18px;
   line-height: 30px;
   color: #000;
   box-sizing: border-box;
+}
+.TextField_input:focus,
+.TextArea_input:focus{
+  box-shadow: 0 0 0 2px rgba(69, 165, 255, .5);
+  z-index: 1;
 }
 .TextField_input::placeholder,
 .TextArea {
