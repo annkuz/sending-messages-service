@@ -5,6 +5,7 @@ import Form from "../../common/form/Form";
 import TextField from "../../common/form/TextField";
 import Group from "../../common/form/Group";
 import TextArea from "../../common/form/TextArea";
+import Button from "../../common/button/Button";
 
 class MessageForm extends Component {
   render() {
@@ -45,6 +46,10 @@ class MessageForm extends Component {
             field='message'
             label='Сообщение'
             placeholder='Сообщение'
+          />
+          <Button
+            title='Отправить'
+            isActive={false}
           />
         </Form>
       </div>
